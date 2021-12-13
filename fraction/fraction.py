@@ -20,7 +20,9 @@ class Fraction:
         self.den = den
 
         try:
-            Fraction(num, den)
+            num = int(num)
+            den = int(den)
+            print(num/den)
         except ZeroDivisionError:
             print("vous ne pouvez pas diviser par zéro")
         except ValueError:
